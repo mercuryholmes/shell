@@ -44,11 +44,7 @@ pyenv versions
 
 ```shell
 pyenv global $PYTHON_VERSION
-```
-
-* 確認
-
-```shell
+pyenv versions
 python -v
 ```
 
@@ -58,6 +54,7 @@ python -v
 
 ```shell
 pyenv local $PYTHON_VERSION
+pyenv versions
 python -v
 ```
 

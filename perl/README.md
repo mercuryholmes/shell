@@ -50,11 +50,7 @@ plenv versions
 
 ```shell
 plenv global $PERL_VERSION
-```
-
-* 確認
-
-```shell
+plenv versions
 perl -v
 ```
 
@@ -64,6 +60,7 @@ perl -v
 
 ```shell
 plenv local $PERL_VERSION
+plenv versions
 perl -v
 ```
 
@@ -90,5 +87,7 @@ plenv exec carton install
 * 実行方法
 
 ```shell
+carton exec
+or
 plenv exec carton exec
 ```
