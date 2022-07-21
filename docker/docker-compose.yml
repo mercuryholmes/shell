@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  # Python
+  python:
+    build: ./python
+    container_name: python
+    volumes:
+      - ./python:/usr/src/app
+    tty: true
+  # Ruby
+  ruby:
+    build: ./ruby
+    container_name: ruby
+    volumes:
+      - ./ruby:/usr/src/app
+    tty: true
+  # Elixir
+  elixir:
+    build: ./elixir
+    container_name: elixir
+    volumes:
+      - ./elixir:/usr/src/app
+    tty: true
+  # MySQL
+  mysql:
+    build: ./mysql
+    container_name: mysql
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    ports:
+      - 3306:3306
